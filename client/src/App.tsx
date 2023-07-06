@@ -10,11 +10,10 @@ function App() {
 	return (
 		<>
 			<h1>Device Management App POC</h1>
-			<p>Sorry, no time for proper styling of this app.</p>
 			<QuerySuspense {...devicesQuery}>
-				{(data) => (
+				{(devices) => (
 					<div className="container">
-						{data.map((device) => (
+						{devices.map((device) => (
 							<Device key={device.id} device={device} />
 						))}
 					</div>
