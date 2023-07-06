@@ -32,4 +32,7 @@ Features:
 4. Use Nx, Turborepo or similar to manage the monorepo
 5. Fix dependency problem (constant values cannot be used in the client package. Probably some vite/bundle issue)
 6. Setup a git repository
-7. ...
+7. Use PostgreSQL instead of SQLite
+8. Add tests
+9. Add linter
+10. ...
