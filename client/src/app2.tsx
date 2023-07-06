@@ -1,5 +1,4 @@
-import "./App.css"
-import { CreateDeviceForm } from "./components/create-device"
+import { CreateDeviceForm } from "./components/create-device-form"
 import { Device } from "./components/device"
 import { useDevices } from "./hooks/use-devices"
 import { QuerySuspense } from "./utils/query-suspense"
