@@ -30,14 +30,15 @@ Features:
 
 ## Next steps
 
-- [x] Style the App more beautifully using e.g. chakra-ui, tailwindcss or styled-components, ...
-- [ ] Add more features like adjusting devices further than just the battery level (name, ...)
-- [ ] Allow to delete devices
-- [ ] Use Nx, Turborepo or similar to manage the monorepo
-- [x] Fix dependency problem (constant values cannot be used in the client package. Probably some vite/bundle issue)
-- [ ] Setup a git repository
-- [ ] Use PostgreSQL instead of SQLite
-- [ ] Add tests
-- [ ] Add linter
-- [ ] Add Routing (react-router) / Next.js
-- [ ] ...
+- [ ] Add more features like adjusting devices further than just the battery level (name, ...)
+- [x] Style the App more beautifully using e.g. chakra-ui, tailwindcss or styled-components, ...
+- [ ] Allow to delete devices
+- [ ] Use Nx, Turborepo or similar to manage the monorepo
+- [x] Fix dependency problem (constant values cannot be used in the client package. Probably some vite/bundle issue)
+- [ ] Setup a git repository
+- [ ] Use PostgreSQL instead of SQLite
+- [ ] Add tests
+- [ ] Add linter
+- [ ] Add Routing (react-router) / Next.js
+- [ ] ...
+
