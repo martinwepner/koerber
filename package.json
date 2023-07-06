@@ -1,0 +1,20 @@
+{
+	"name": "koerber-challenge",
+	"version": "1.0.0",
+	"description": "",
+	"scripts": {
+		"build": "pnpm --stream -r build",
+		"dev": "pnpm --stream --parallel dev",
+		"prisma:migrate-dev": "pnpm --filter database prisma:migrate-dev",
+		"prisma:generate": "pnpm --filter database prisma:generate",
+		"clean": "rm -rf **/dist && rm -rf **/node_modules && rm -rf **/*.tsbuildinfo && rm -rf node_modules"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"private": true,
+	"devDependencies": {
+		"prettier": "^2.8.8",
+		"typescript": "^5.1.5"
+	}
+}
