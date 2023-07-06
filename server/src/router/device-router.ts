@@ -1,6 +1,6 @@
 import { PrismaClient } from "database"
 import { Router } from "express"
-import { ValidatedRequest } from "types/validated-request"
+import { ValidatedRequest } from "router/middlewares/validated-request"
 import { zDeviceBatteryStatus, zDeviceType } from "utils/constants"
 import { parseDatabaseId } from "utils/zod"
 import { z } from "zod"
@@ -49,9 +49,7 @@ export const DeviceRouter = ({ prisma }: DeviceRouterArgs) => {
 		"/:id",
 		ValidatedRequest(
 			z.object({
-				params: z.object({
-					id: parseDatabaseId(),
-				}),
+				params: z.object({ id: parseDatabaseId() }),
 				body: z.object({
 					name: z.string().optional(),
 					type: zDeviceType.optional(),
