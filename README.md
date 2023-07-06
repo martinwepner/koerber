@@ -4,10 +4,10 @@ Basic full stack app to manage devices.
 
 Features:
 
-1. List devices
-2. Add device
-3. Update device battery level
-4. No fancy design
+-   List devices
+-   Add device
+-   Update device battery level
+-   chakra-ui for styling
 
 ## Getting Started
 
@@ -24,15 +24,19 @@ Features:
 -   Frontend (`client`) is a React app using Vite as bundler, react-query for data fetching
 -   Shared stuff (`shared`) contains types, constants, ... used in both backend and frontend
 
+## Comments
+
+-   Plain React and chakra-ui because this is a management app that does not really serve static content. Depending on the next steps of this app one can also consider using Next.js.
+
 ## Next steps
 
-1. Style the App more beautifully using e.g. chakra-ui, tailwindcss or styled-components, ...
-2. Add more features like adjusting devices further than just the battery level (name, ...)
-3. Allow to delete devices
-4. Use Nx, Turborepo or similar to manage the monorepo
-5. Fix dependency problem (constant values cannot be used in the client package. Probably some vite/bundle issue)
-6. Setup a git repository
-7. Use PostgreSQL instead of SQLite
-8. Add tests
-9. Add linter
-10. ...
+- [x] Style the App more beautifully using e.g. chakra-ui, tailwindcss or styled-components, ...
+- [ ] Add more features like adjusting devices further than just the battery level (name, ...)
+- [ ] Allow to delete devices
+- [ ] Use Nx, Turborepo or similar to manage the monorepo
+- [x] Fix dependency problem (constant values cannot be used in the client package. Probably some vite/bundle issue)
+- [ ] Setup a git repository
+- [ ] Use PostgreSQL instead of SQLite
+- [ ] Add tests
+- [ ] Add linter
+- [ ] ...
