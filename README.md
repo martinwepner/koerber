@@ -39,4 +39,5 @@ Features:
 - [ ] Use PostgreSQL instead of SQLite
 - [ ] Add tests
 - [ ] Add linter
+- [ ] Add Routing (react-router) / Next.js
 - [ ] ...

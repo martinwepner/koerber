@@ -1,14 +1,14 @@
+import { Box } from "@chakra-ui/react"
 import type { Device as DeviceType } from "shared"
 import { usePatchDevice } from "../hooks/use-patch-device"
-import "./device.css"
 
 export interface DeviceProps {
 	device: DeviceType
 }
-export const Device = ({ device }: DeviceProps) => {
+export function Device({ device }: DeviceProps) {
 	const { mutate: patchDevice } = usePatchDevice(device.id)
 	return (
-		<div className="device">
+		<Box p="8px" boxShadow="md" borderRadius="md" border="1px solid">
 			<div>Name: {device.name}</div>
 			<div>Type: {device.type}</div>
 			<div>Battery: {device.batteryStatus}%</div>
@@ -27,6 +27,6 @@ export const Device = ({ device }: DeviceProps) => {
 			>
 				Decrease Battery
 			</button>
-		</div>
+		</Box>
 	)
 }
