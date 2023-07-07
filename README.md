@@ -36,7 +36,7 @@ Basic full stack app to manage devices.
 - [ ] Allow to delete devices
 - [ ] Use Nx, Turborepo or similar to manage the monorepo
 - [x] Fix dependency problem (constant values cannot be used in the client package. Probably some vite/bundle issue)
-- [ ] Setup a git repository
+- [x] Setup a git repository
 - [ ] Use PostgreSQL instead of SQLite
 - [ ] Add tests (unit/integration/e2e)
 - [ ] Add linter
