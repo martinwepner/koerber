@@ -16,14 +16,13 @@ export const usePatchDevice = (
 			...options,
 			onSuccess: (data, ...args) => {
 				queryClient.setQueryData(["devices"], (devices: Device[] | undefined) => {
-					return devices
-						? devices.map((device) => {
-								if (device.id === data.id) {
-									return data
-								}
-								return device
-						  })
-						: []
+					if (devices === undefined) return []
+					return devices.map((device) => {
+						if (device.id === data.id) {
+							return data
+						}
+						return device
+					})
 				})
 				options?.onSuccess?.(data, ...args)
 			},

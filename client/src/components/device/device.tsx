@@ -1,6 +1,6 @@
 import { Box } from "@chakra-ui/react"
 import type { Device as DeviceType } from "shared"
-import { usePatchDevice } from "../hooks/use-patch-device"
+import { usePatchDevice } from "../../hooks/use-patch-device"
 
 export interface DeviceProps {
 	device: DeviceType
