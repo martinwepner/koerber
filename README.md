@@ -15,6 +15,7 @@ Basic full stack app to manage devices.
 2. Install dependencies (`pnpm i -r`, `-r` installs dependencies recursively in all packages/workspaces)
 3. Run `pnpm prisma:migrate-dev` to initialize the database
 4. Run `pnpm run --filter shared build ` to build the shared package 
+5. In the `server`/`client` package, create a `.env` using `.env.example` as template
 5. Run `pnpm dev` to start the server and client
 6. Check your terminal logs for the URLs of the server and client
 
